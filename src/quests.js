@@ -1,7 +1,13 @@
 const insaneAsylumQuest = {
-    id: 'insane-asylum',
+    id: 'insane-quest',
     title: 'Fly Out of the Cuckoo\'s Nest',
-    description: ''
+    description: 'You wake up in an insane asylum. You are chained to the bed. You want to escape. You look around you for anything to help you escape.',
+    choices:[
+        {
+
+        }
+    ]
+    
 };
 
 const bankQuest = {

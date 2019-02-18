@@ -1,0 +1,30 @@
+const needle = { 
+    name: 'Needle',
+    description: 'You notice a needle sitting on the nightstand beside your bed.',
+    result: 'Use the needle to pick the lock of the handcuffs. Smart thinking, gain 5 clever points',
+    hp: 0,
+    cp: 5
+};
+
+const hammer = {
+    name: 'Hammer',
+    description: 'Open the bedside drawer and find a reflex hammer.', 
+    result: 'You are able to successfully break the handcuffs off with the hammer.  But in the process, injure yourself and lose 5 health points.',
+    hp: -5,
+    cp: 0
+};
+
+const bruteForce = {
+    name: 'Brute Force',
+    description: 'You start wondering how strong the handcuffs are against your strength',
+    result: 'You use all your power to brute force your cuffs free from the bed. Your adrenaline boosts your health by 5 points. ',
+    hp: 5,
+    cp: 0
+};
+
+const insaneOneChoices = [needle, hammer, bruteForce];
+
+export default insaneOneChoices;
+
+
+
