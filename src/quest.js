@@ -1,5 +1,7 @@
 import allThemes from './quests.js';
 import insaneOneChoices from '../src/themes/insane/insane-scenario-1/choices.js';
+import insaneTwoChoices from '../src/themes/insane/insane-scenario-2/choices.js';
+import insaneThreeChoices from '../src/themes/insane/insane-scenario-3/choices.js';
 
 const json = window.localStorage.getItem('user');
 // if(!json) {
@@ -30,12 +32,13 @@ titleNode.textContent = currentTheme.title;
 
 descriptionNode.textContent = currentTheme['description' + String(scenarioTitle)];
 
-const insaneAllScenarios = [insaneOneChoices];
-// add other two scenarios
-// make new array for all themes choices
+const insaneAllScenarios = [insaneOneChoices, insaneTwoChoices, insaneThreeChoices];
+
+
 
 let chosen = null;
 const currentScenario = insaneAllScenarios[scenarioTitle];
+
 
 for(let i = 0; i < currentScenario.length; i++) {
     chosen = currentScenario[i];
@@ -56,20 +59,23 @@ for(let i = 0; i < currentScenario.length; i++) {
     formNode.prepend(document.createElement('br'));
 }
 
+
 formNode.addEventListener('submit', function(event) {
     event.preventDefault();
     formNode.hidden = true;
     resultNode.hidden = false;
-    
     const formData = new FormData(formNode);
-    const choice = formData.get('insane-choices'); // update to []
-    for(let i = 0; i < insaneOneChoices.length; i++) {
-        const object = insaneOneChoices[i];
-        if(choice === object.id) {
-            resultParagraph.textContent = object.result;
+    const choice = formData.get('insane-choices');
+    
+
+    for(let i = 0; i < currentScenario.length; i++) {
+        let chosen = currentScenario[i];
+  
+        if(choice === chosen.id) {
+            resultParagraph.textContent = chosen.result;
         
-            user.hp += object.hp;
-            user.cp += object.cp;
+            user.hp += chosen.hp;
+            user.cp += chosen.cp;
             const json = JSON.stringify(user);
             window.localStorage.setItem('user', json);
         }
