@@ -1,7 +1,7 @@
 const drawer = { 
-    name: 'Needle',
-    id: 'needle',
-    description: 'You notice a needle sitting on the nightstand beside your bed.',
+    name: 'Drawer',
+    id: 'drawer',
+    description: 'There\,
     result: 'Use the needle to pick the lock of the handcuffs. Smart thinking, gain 5 clever points',
     hp: 0,
     cp: 5

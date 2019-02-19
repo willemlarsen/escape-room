@@ -11,5 +11,5 @@ formNode.addEventListener('submit', function(event) {
 
     const json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
-    window.location = '../pages/choose-quest.html';
+    window.location = '../pages/choose-theme.html';
 });
