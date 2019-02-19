@@ -1,5 +1,11 @@
 import allQuests from './quests.js';
 
+// const json = window.localStorage.getItem('user');
+// if(!json) {
+//     window.location = '/';
+// }
+// const user = JSON.parse(json);
+
 const themesNode = document.getElementById('themes');
 
 for(let i = 0; i < allQuests.length; i++) {
