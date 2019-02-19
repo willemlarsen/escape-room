@@ -1,10 +1,10 @@
 import allQuests from './quests.js';
 
-// const json = window.localStorage.getItem('user');
-// if(!json) {
-//     window.location = '/';
-// }
-// const user = JSON.parse(json);
+const json = window.localStorage.getItem('user');
+if(!json) {
+    window.location = '/';
+}
+const user = JSON.parse(json);
 
 const themesNode = document.getElementById('themes');
 
