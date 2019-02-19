@@ -13,7 +13,8 @@ for(let i = 0; i < allQuests.length; i++) {
     const li = document.createElement('li');
     const link = document.createElement('a');
 
-    link.href = 'quest.html?name=' + encodeURIComponent(currentQuest.id);
+    link.href = 'quest.html?name=' + encodeURIComponent(currentQuest.id) + '&scenario=0';
+
     link.textContent = currentQuest.title;
 
     themesNode.appendChild(li);
