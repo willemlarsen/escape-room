@@ -1,12 +1,19 @@
 const formNode = document.getElementById('user-form');
 
+const insaneTheme = {
+    clicked: false
+};
+const bankTheme = {
+    clicked: false
+};
 formNode.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(formNode);
     const user = {
         name: formData.get('name'),
-        hp: 100,
-        cp: 0
+        hp: 50,
+        cp: 0,
+        themes: [insaneTheme, bankTheme]
     };
 
     const json = JSON.stringify(user);

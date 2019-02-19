@@ -2,8 +2,8 @@ const fight = {
     name: 'Fight',
     id: 'fight',
     description: 'The nurses notice your strange behavior and start walking towards you. Your adrenaline is pumping and you decide you\'ll stand your ground.',
-    result: 'Adrenaline is no match for 6 burly nurses, you\'re taken down and captured',
-    hp: -20,
+    result: 'Adrenaline is no match for 6 burly nurses, you\'re taken down and captured.',
+    hp: -60,
     cp: -10
 };
 

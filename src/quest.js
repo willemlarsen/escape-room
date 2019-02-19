@@ -82,10 +82,18 @@ formNode.addEventListener('submit', function(event) {
     }
 
 });
-continueButton.addEventListener('click', function() {
-    scenarioTitle++;
-    searchParams.set('scenario', scenarioTitle);
-    window.location.search = searchParams;
+
+continueButton.addEventListener('click', function(event) {
+    event.preventDefault();
+    if(scenarioTitle < currentScenario.length) {
+        console.log('hi');
+        scenarioTitle++;
+        searchParams.set('scenario', scenarioTitle);
+        window.location.search = searchParams;
+    }
+    if(scenarioTitle === currentScenario.length) {
+        window.location = '../pages/result.html';
+    }
 });
 
 

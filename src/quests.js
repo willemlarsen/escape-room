@@ -9,8 +9,11 @@ const insaneTheme = {
 const bankTheme = {
     id: 'bank-quest',
     title: 'Break the Bank',
-    description: ''
+    description0: 'You break into a bank, with the intention of taking all the money and escaping without detection.  While in the vault, you trip an alarm for the gold safe.  The vault slams shut, locking you inside, what do you do?',
+    description1:
+
 };
+
 
 const allThemes = [insaneTheme, bankTheme];
 
