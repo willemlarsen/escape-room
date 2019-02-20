@@ -1,10 +1,12 @@
 import allQuests from './quests.js';
+import scoreDisplay from './score-display.js';
 
 const json = window.localStorage.getItem('user');
 if(!json) {
     window.location = '/';
 }
 const user = JSON.parse(json);
+scoreDisplay(user);
 
 const themesNode = document.getElementById('themes');
 

@@ -1,10 +1,12 @@
-import allThemes from './quests.js'; 
+import allThemes from './quests.js';
+import scoreDisplay from './score-display.js'; 
 
 const json = window.localStorage.getItem('user');
 // if(!json) {
-//     window.location = '/';
-// }
+    //     window.location = '/';
+    // }
 const user = JSON.parse(json);
+scoreDisplay(user);
 
 const formNode = document.getElementById('choices');
 const titleNode = document.getElementById('title');
@@ -40,16 +42,16 @@ for(let i = 0; i < currentScenario.length; i++) {
     chosen = currentScenario[i];
     const label = document.createElement('label');
     label.for = chosen.id;
-
+    
     const radio = document.createElement('input');
     radio.type = 'radio';
     radio.id = chosen.id; 
     radio.name = 'insane-choices';  //[insane-choices, bank-choices, etc.]
     radio.value = chosen.id; 
     radio.required = true;
-
+    
     label.textContent = chosen.name + ' - ' + chosen.description; 
-
+    
     formNode.prepend(label);
     formNode.prepend(radio);
     formNode.prepend(document.createElement('br'));
@@ -63,17 +65,18 @@ formNode.addEventListener('submit', function(event) {
     const formData = new FormData(formNode);
     const choice = formData.get('insane-choices');
     
-
+    
     for(let i = 0; i < currentScenario.length; i++) {
         let chosen = currentScenario[i];
-  
+        
         if(choice === chosen.id) {
             resultParagraph.textContent = chosen.result;
-        
+            
             user.hp += chosen.hp;
             user.cp += chosen.cp;
             const json = JSON.stringify(user);
             window.localStorage.setItem('user', json);
+            scoreDisplay(user);
         }
     }
 
