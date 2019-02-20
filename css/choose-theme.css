@@ -6,7 +6,6 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    border: 1px solid white;
     margin-left: 65%;
 }
 
@@ -39,4 +38,11 @@ li {
 
 ul {
     text-align: center;
+}
+
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    width: 100px;
 }

@@ -46,11 +46,11 @@ for(let i = 0; i < currentScenario.length; i++) {
     const radio = document.createElement('input');
     radio.type = 'radio';
     radio.id = chosen.id; 
-    radio.name = 'insane-choices';  //[insane-choices, bank-choices, etc.]
+    radio.name = 'insane-choices'; // also applies to bank choices
     radio.value = chosen.id; 
     radio.required = true;
     
-    label.textContent = chosen.name + ' - ' + chosen.description; 
+    label.textContent = chosen.name + ' - ' + chosen.description;
     
     formNode.prepend(label);
     formNode.prepend(radio);
