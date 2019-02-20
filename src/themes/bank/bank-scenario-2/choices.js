@@ -17,7 +17,7 @@ const bumpKey = {
 };
 
 const fingerprint = {
-    name: 'fingerprint',
+    name: 'Fingerprint',
     id: 'fingerprint',
     description: 'you have a fingerprint kit in your duffle bag.',
     result: 'You use the kit to lift a fingerprint and scan your way out of the vault',

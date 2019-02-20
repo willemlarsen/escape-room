@@ -8,7 +8,7 @@ const drawer = {
 };
 
 const scream = {
-    name: 'scream',
+    name: 'Scream',
     id: 'scream',
     description: 'Scream and attract the nurse\'s attention.', 
     result: 'Lock the nurse in the room and steal her coat. Gain 5 clever points and lose 5 health points from exerting energy.',
@@ -17,7 +17,7 @@ const scream = {
 };
 
 const vents = {
-    name: 'vents',
+    name: 'Vents',
     id: 'vents',
     description: 'You see a vent.',
     result: 'You are able to wiggle through, and you are now outside of the room.  While trying to get out, the vent collapsed, and you fall into the hallway.  The fall causes you to lose 10 health points, but you gain 5 clever points for your escape.',
