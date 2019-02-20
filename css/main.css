@@ -1,0 +1,63 @@
+html {
+    background: url(/assets/img/dark-hallway.jpeg) no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+body {
+    text-align: center;
+}
+
+#user-form {
+    margin-top: 10%;
+}
+
+main {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 30px;
+    color: white;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+    width: 70px;
+}
+
+#green-arrow {
+    width: 100%;
+    margin-top: 40px;
+    transition: transform 0.5s;
+}
+
+#green-arrow:hover {
+    transform: scale(1.7);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+}
+
+h1 {
+    font-family: 'Emblema One', cursive;
+    font-size: 70px;
+    color: white;
+}
+
+a {
+    font-family: 'Share Tech Mono', monospace;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+
+a:hover {
+    color: rgb(2, 255, 2);
+}
+
+
+
