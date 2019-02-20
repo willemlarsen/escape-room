@@ -1,7 +1,4 @@
-import allThemes from './quests.js';
-import insaneOneChoices from '../src/themes/insane/insane-scenario-1/choices.js';
-import insaneTwoChoices from '../src/themes/insane/insane-scenario-2/choices.js';
-import insaneThreeChoices from '../src/themes/insane/insane-scenario-3/choices.js';
+import allThemes from './quests.js'; 
 
 const json = window.localStorage.getItem('user');
 // if(!json) {
@@ -32,12 +29,11 @@ titleNode.textContent = currentTheme.title;
 
 descriptionNode.textContent = currentTheme['description' + String(scenarioTitle)];
 
-const insaneAllScenarios = [insaneOneChoices, insaneTwoChoices, insaneThreeChoices];
 
-
+const allScenarios = currentTheme.scenarios;
 
 let chosen = null;
-const currentScenario = insaneAllScenarios[scenarioTitle];
+const currentScenario = allScenarios[scenarioTitle];
 
 
 for(let i = 0; i < currentScenario.length; i++) {
