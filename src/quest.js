@@ -2,9 +2,9 @@ import allThemes from './quests.js';
 import scoreDisplay from './score-display.js'; 
 
 const json = window.localStorage.getItem('user');
-// if(!json) {
-    //     window.location = '/';
-    // }
+if(!json) {
+    window.location = '/';
+}
 const user = JSON.parse(json);
 scoreDisplay(user);
 
@@ -42,9 +42,6 @@ for(let i = 0; i < currentTheme.images.length; i++) {
         htmlNode.style.backgroundImage = currentTheme.images[i];
         htmlNode.classList.add('resize');
     }
-    // if(currentTheme = 'bankTheme') {
-
-    // }
 }
 
 

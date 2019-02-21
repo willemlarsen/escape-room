@@ -1,4 +1,4 @@
-import scoreDisplay from "./score-display.js";
+import scoreDisplay from './score-display.js';
 
 const outcomeMessage = document.getElementById('outcome');
 const cpMessage = document.getElementById('cp-message');
@@ -24,5 +24,12 @@ buttonNode.addEventListener('click', function() {
     user.cp = 0;
     const json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
-    window.location = '../pages/choose-theme.html';
+    
+    if(user.completedThemes.length > 3) {
+        window.location = '/index.html';
+    } 
+    else {        
+        window.location = '../pages/choose-theme.html';
+    }
+    
 });
