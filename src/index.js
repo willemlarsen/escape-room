@@ -12,5 +12,5 @@ formNode.addEventListener('submit', function(event) {
 
     const json = JSON.stringify(user);
     window.localStorage.setItem('user', json);
-    window.location = './escape-room/pages/choose-theme.html';
+    window.location = 'pages/choose-theme.html';
 });
