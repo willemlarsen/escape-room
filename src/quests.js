@@ -12,7 +12,7 @@ const insaneTheme = {
     description1: 'After breaking free from your handcuffs, you dart around the room and frantically begin searching for a way to unlock the door. What do you do next?',
     description2: 'You\'ve successfully broken out of the room and are standing in the hallway. Now you must overcome the challenge of escaping this very creepy insane asylum. Can you make it out?',
     scenarios: [insaneOneChoices, insaneTwoChoices, insaneThreeChoices],
-    images: ['url(../../assets/img/bed.jpg)', 'url(../../assets/img/asylum.jpg)', 'url(../../assets/img/hallway.jpg']
+    images: ['url(../assets/img/bed.jpg)', 'url(../assets/img/asylum.jpg)', 'url(../assets/img/hallway.jpg']
 };
 
 const bankTheme = {
@@ -22,7 +22,7 @@ const bankTheme = {
     description1: 'You successfully sneak into a bank and proceed to the vault. While in the vault, you trip an alarm for the gold safe. The vault slams shut, locking you inside, what do you do?',
     description2: 'You\'ve made your way out of the vault relatively unscathed. Adrenaline is rushing now as you should try to figure a way out of the bank before you are caught by the police.',
     scenarios: [bankOneChoices, bankTwoChoices, bankThreeChoices],
-    images: ['url(../../assets/img/thief.jpg', 'url(../../assets/img/vault.jpg', 'url(../../assets/img/bank-hallway.jpeg']
+    images: ['url(../assets/img/thief.jpg', 'url(../assets/img/vault.jpg', 'url(../assets/img/bank-hallway.jpeg']
 };
 
 const allThemes = [insaneTheme, bankTheme];
