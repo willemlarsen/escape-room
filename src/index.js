@@ -1,12 +1,5 @@
 const formNode = document.getElementById('user-form');
 
-// const insaneTheme = {
-//     clicked: false
-// };
-// const bankTheme = {
-//     clicked: false
-// };
-
 formNode.addEventListener('submit', function(event) {
     event.preventDefault();
     const formData = new FormData(formNode);

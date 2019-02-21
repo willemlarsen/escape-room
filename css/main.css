@@ -1,5 +1,5 @@
 html {
-    background: url(/assets/img/dark-hallway.jpeg) no-repeat center center fixed;
+    background: url(./assets/img/dark-hallway.jpeg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -60,6 +60,3 @@ a {
 a:hover {
     color: rgb(2, 255, 2);
 }
-
-
-
