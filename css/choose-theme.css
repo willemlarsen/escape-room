@@ -4,9 +4,7 @@ html {
 
 #header-border {
     display: flex;
-    /* flex-direction: row; */
     justify-content: flex-end;
-    /* margin-left: 65%; */
 }
 
 .points {
@@ -38,7 +36,6 @@ li {
 ul {
     display: flex;
     justify-content: space-around;
-    /* text-align: center; */
 }
 
 .resize {
