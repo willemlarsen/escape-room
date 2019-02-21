@@ -6,20 +6,34 @@
     background-size: cover;
 }
 
-header {
-    font-family: 'Share Tech Mono', monospace;
+#header-border {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: flex-end;
+    /* margin-left: 65%; */
     color: white;
 }
 
+.points {
+    padding: 0px 10px;
+}
+
+#user-name {
+    padding-right: 10px;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+}
+
 main {
+    font-size: 15px;
     background-color: white;
-    width: 50%;
+    width: 80%;
     opacity: 0.6;
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    font-family: 'Share Tech Mono', monospace;
-    font-size: 20px;
 }
 
 h1 {
@@ -36,20 +50,4 @@ button {
 button:hover {
     color: red;
     transform: scale(1.4);
-}
-
-#header-border {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-left: 65%;
-    color: white;
-}
-
-.points {
-    padding: 0px 10px;
-}
-
-#user-name {
-    padding-right: 10px;
 }
