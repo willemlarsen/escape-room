@@ -14,6 +14,7 @@ formNode.addEventListener('submit', function(event) {
         name: formData.get('name'),
         hp: 50,
         cp: 0,
+        completedThemes: []
     };
 
     const json = JSON.stringify(user);

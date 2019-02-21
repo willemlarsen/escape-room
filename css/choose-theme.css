@@ -30,11 +30,31 @@ h1 {
 
 li {
     display: inline-block;
-    padding: 100px;
+    /* padding: 100px; */
     color: white;
     margin-top: 70px;
 }
 
 ul {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    /* text-align: center; */
 }
+
+.resize {
+    width: 50%;
+}
+
+#text-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: 'Emblema One', cursive;
+    font-size: 70px;
+    color: white;
+    text-shadow: 0 0 30px rgb(2, 255, 2);
+}
+
+ 

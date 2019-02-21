@@ -81,6 +81,8 @@ formNode.addEventListener('submit', function(event) {
         let chosen = currentScenario[i];
         
         if(choice === chosen.id) {
+            user.completedThemes.push(currentTheme.id);
+           
             resultParagraph.textContent = chosen.result;
             
             user.hp += chosen.hp;
@@ -91,12 +93,12 @@ formNode.addEventListener('submit', function(event) {
         }
     }
 
+
 });
 
 continueButton.addEventListener('click', function(event) {
     event.preventDefault();
     if(scenarioTitle < currentScenario.length) {
-        console.log('hi');
         scenarioTitle++;
         searchParams.set('scenario', scenarioTitle);
         window.location.search = searchParams;
