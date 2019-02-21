@@ -1,0 +1,55 @@
+.resize {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+main {
+    background-color: white;
+    width: 50%;
+    opacity: 0.6;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Joti One', cursive;
+}
+
+button {
+    margin: 20px;
+    transition: transform 0.5s;
+    font-family: 'Share Tech Mono', monospace;
+    border: 1px solid black;
+}
+
+button:hover {
+    color: red;
+    transform: scale(1.4);
+}
+
+#header-border {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 65%;
+    color: white;
+}
+
+.points {
+    padding: 0px 10px;
+}
+
+#user-name {
+    padding-right: 10px;
+}

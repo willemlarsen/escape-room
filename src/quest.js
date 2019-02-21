@@ -8,6 +8,7 @@ const json = window.localStorage.getItem('user');
 const user = JSON.parse(json);
 scoreDisplay(user);
 
+const htmlNode = document.getElementById('background-image');
 const formNode = document.getElementById('choices');
 const titleNode = document.getElementById('title');
 const descriptionNode = document.getElementById('quest-description');
@@ -31,11 +32,21 @@ titleNode.textContent = currentTheme.title;
 
 descriptionNode.textContent = currentTheme['description' + String(scenarioTitle)];
 
-
 const allScenarios = currentTheme.scenarios;
 
 let chosen = null;
 const currentScenario = allScenarios[scenarioTitle];
+
+for(let i = 0; i < currentTheme.images.length; i++) {
+    if(scenarioTitle === i) {
+        htmlNode.style.backgroundImage = currentTheme.images[i];
+        htmlNode.classList.add('resize');
+    }
+    // if(currentTheme = 'bankTheme') {
+
+    // }
+}
+
 
 
 for(let i = 0; i < currentScenario.length; i++) {
