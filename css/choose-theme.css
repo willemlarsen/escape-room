@@ -22,7 +22,7 @@ body {
 
 h1 {
     font-family: 'Emblema One', cursive;
-    font-size: 50px;
+    font-size: 65px;
     text-align: center;
     color: white;
     text-shadow: 0 0 30px rgb(2, 255, 2);
@@ -55,5 +55,5 @@ ul {
 
 li {
     display: inline-block;
-    /* color: white; */
+    margin-top: 150px;
 }

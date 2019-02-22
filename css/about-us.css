@@ -12,12 +12,13 @@ body {
 h1 {
     font-family: 'Emblema One', cursive;
     text-shadow: 0 0 30px rgb(2, 255, 2);
+    font-size: 45px;
 }
 
 .rectangle {
     text-align: justify;
-    width: 60%;
-    margin: 0px 150px 0px 150px;
+    align-items: center;
+    margin: 0px 450px 0px 450px;
 }
 
 h3 {
@@ -32,4 +33,20 @@ a {
 
 a:visited {
     color: white;
+}
+
+#home-button {
+    font-size: 20px;
+}
+
+#home-button:hover {
+    color: rgb(2, 255, 2);
+}
+
+footer {
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 50px;
 }

@@ -41,3 +41,10 @@ button:hover {
     color: red;
     transform: scale(1.2);
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+}
