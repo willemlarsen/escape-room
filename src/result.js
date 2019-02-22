@@ -28,7 +28,7 @@ buttonNode.addEventListener('click', function() {
     window.localStorage.setItem('user', json);
     
     if(user.completedThemes.length > 3) {
-        window.location = '/index.html';
+        window.location = '../index.html';
     } 
     else {        
         window.location = '../pages/choose-theme.html';
