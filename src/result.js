@@ -1,7 +1,6 @@
 import scoreDisplay from './score-display.js';
 
 const outcomeMessage = document.getElementById('outcome');
-// const cpMessage = document.getElementById('cp-message');
 const buttonNode = document.getElementById('play-again');
 
 const json = window.localStorage.getItem('user');
@@ -15,10 +14,6 @@ if(user.hp <= 0) {
 else {
     outcomeMessage.textContent = 'Congratulations, ' + user.name + ', you escaped!';
 }
-
-// if(user.cp >= 10) {
-//     cpMessage.textContent = 'So clever!';
-// }
 
 buttonNode.addEventListener('click', function() {
     user.hp = 50;
