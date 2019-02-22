@@ -13,3 +13,8 @@ h1 {
     font-family: 'Emblema One', cursive;
     text-shadow: 0 0 30px rgb(2, 255, 2);
 }
+
+main {
+    margin-right: auto;
+    margin-left: auto;
+}

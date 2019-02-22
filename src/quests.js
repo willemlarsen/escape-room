@@ -22,7 +22,7 @@ const bankTheme = {
     description1: 'You make it inside the vault. Mesmerized by stacks of cash, you accidentally trip the alarm. The vault door slams shut, locking you inside.  What do you do?',
     description2: 'You\'ve made your way out of the vault relatively unscathed. Adrenaline is rushing now, think of a way to escape before you are caught by the police.',
     scenarios: [bankOneChoices, bankTwoChoices, bankThreeChoices],
-    images: ['url(../assets/img/thief.jpg', 'url(../assets/img/vault.jpg', 'url(../assets/img/bank-hallway.jpeg']
+    images: ['url(../assets/img/thief.jpg', 'url(../assets/img/vault.jpg', 'url(../assets/img/gringotts.jpg']
 };
 
 const allThemes = [insaneTheme, bankTheme];

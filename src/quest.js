@@ -72,7 +72,6 @@ formNode.addEventListener('submit', function(event) {
     const formData = new FormData(formNode);
     const choice = formData.get('insane-choices');
     
-    
     for(let i = 0; i < currentScenario.length; i++) {
         let chosen = currentScenario[i];
         
@@ -84,13 +83,13 @@ formNode.addEventListener('submit', function(event) {
             
             user.hp += chosen.hp;
             user.cp += chosen.cp;
+
             const json = JSON.stringify(user);
             window.localStorage.setItem('user', json);
+
             scoreDisplay(user);
         }
     }
-
-
 });
 
 continueButton.addEventListener('click', function(event) {
@@ -100,9 +99,8 @@ continueButton.addEventListener('click', function(event) {
         searchParams.set('scenario', scenarioTitle);
         window.location.search = searchParams;
     }
+
     if(scenarioTitle === currentScenario.length) {
         window.location = '../pages/result.html';
     }
 });
-
-
