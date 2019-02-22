@@ -8,7 +8,7 @@ import bankThreeChoices from './themes/bank/bank-scenario-3/choices.js';
 const insaneTheme = {
     id: 'insane-quest',
     title: 'Fly Out of the Cuckoo\'s Nest',
-    description0: 'You wake up to the pungent smell of rusted metal. You open your eyes, squinting in an attempt to sharpen the blurred environment around you. You glance around the room and try to lift your arm up. To your surprise and confusion, both of your arms are chained tighly to the bed with metal handcuffs. Your heart starts to beat quickly, and you feel yourself panicking. You\'re looking for any way to break yourself free. What is your tool of choice?',
+    description0: 'You wake up to the pungent smell of rusted metal. You open your eyes, squinting in an attempt to sharpen the blurred environment around you. You glance around the room and try to lift your arm up. To your surprise and confusion, both of your arms are chained tightly to the bed with metal handcuffs. Your heart starts to beat quickly, and you feel yourself panicking. You\'re looking for any way to break yourself free. What is your tool of choice?',
     description1: 'After breaking free from your handcuffs, you dart around the room and frantically begin searching for a way to unlock the door. What do you do next?',
     description2: 'You\'ve successfully broken out of the room and made it to the hallway. Now you must overcome the challenge of escaping this very creepy insane asylum. Can you make it out?',
     scenarios: [insaneOneChoices, insaneTwoChoices, insaneThreeChoices],
