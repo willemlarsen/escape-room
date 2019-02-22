@@ -63,3 +63,9 @@ button:hover {
 .bold {
     font-weight: bold;
 }
+
+#result-header {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+}

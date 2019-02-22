@@ -6,6 +6,7 @@ if(!json) {
     window.location = '/';
 }
 const user = JSON.parse(json);
+
 scoreDisplay(user);
 
 const htmlNode = document.getElementById('background-image');
@@ -44,8 +45,6 @@ for(let i = 0; i < currentTheme.images.length; i++) {
     }
 }
 
-
-
 for(let i = 0; i < currentScenario.length; i++) {
     chosen = currentScenario[i];
     const label = document.createElement('label');
@@ -63,8 +62,8 @@ for(let i = 0; i < currentScenario.length; i++) {
     formNode.prepend(label);
     formNode.prepend(radio);
     formNode.prepend(document.createElement('br'));
+    formNode.prepend(document.createElement('br'));
 }
-
 
 formNode.addEventListener('submit', function(event) {
     event.preventDefault();

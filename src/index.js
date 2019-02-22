@@ -2,7 +2,9 @@ const formNode = document.getElementById('user-form');
 
 formNode.addEventListener('submit', function(event) {
     event.preventDefault();
+    
     const formData = new FormData(formNode);
+
     const user = {
         name: formData.get('name'),
         hp: 50,

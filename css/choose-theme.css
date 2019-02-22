@@ -21,11 +21,12 @@ body {
 }
 
 h1 {
-    text-align: center;
     font-family: 'Emblema One', cursive;
-    font-size: 40px;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 30px rgb(2, 255, 2);
 }
-
 
 .resize {
     width: 50%;
@@ -48,25 +49,11 @@ h1 {
     justify-content: space-around;
 }
 ul {
-    
     display: flex;
     justify-content: space-around;
 }
 
 li {
     display: inline-block;
-    /* padding: 100px; */
-    color: white;
+    /* color: white; */
 }
-
-
-
-h1 {
-    font-family: 'Emblema One', cursive;
-    font-size: 70px;
-    color: white;
-    text-shadow: 0 0 30px rgb(2, 255, 2);
-}
-
-
- 

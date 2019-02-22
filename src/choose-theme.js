@@ -33,7 +33,7 @@ for(let i = 0; i < allThemes.length; i++) {
         linkImage.classList.add('insane-position');
     }
     else {
-        linkImage.src = '../assets/img/green-arrow.png';
+        linkImage.src = '../assets/img/green-arrow-right.png';
         link.appendChild(linkImage);
         textBankNode.textContent = 'The Bank Heist';      
         linkImage.classList.add('resize');      
@@ -41,7 +41,4 @@ for(let i = 0; i < allThemes.length; i++) {
     }
     themesNode.appendChild(li);
     li.appendChild(link);
-
 }
-
-

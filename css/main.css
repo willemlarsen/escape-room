@@ -10,14 +10,14 @@ body {
     text-align: center;
 }
 
-#user-form {
-    margin-top: 10%;
-}
-
 main {
     font-family: 'Share Tech Mono', monospace;
     font-size: 30px;
     color: white;
+}
+
+#user-form {
+    margin-top: 10%;
 }
 
 button {
