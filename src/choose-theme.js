@@ -15,26 +15,41 @@ const textBankNode = document.getElementById('bank-text');
 
 
 for(let i = 0; i < allThemes.length; i++) {
-    if(user.completedThemes.includes(allThemes[i].id)){
-        continue; 
-    }
-
     const currentTheme = allThemes[i];
     const li = document.createElement('li');
     const link = document.createElement('a');
     const linkImage = document.createElement('img');
     
+    if(user.completedThemes.includes(currentTheme.id)){
+        li.style.visibility = 'hidden';
+    }
+
     link.href = 'quest.html?name=' + encodeURIComponent(currentTheme.id) + '&scenario=0';
+
     if(currentTheme.id === 'insane-quest') {
         linkImage.src = '../assets/img/green-arrow-left.png';
-        link.appendChild(linkImage);  
-        textInsaneNode.textContent = 'Insane Asylum';
+        link.appendChild(linkImage);
+
+        if(user.completedThemes.includes(currentTheme.id)) {
+            textInsaneNode.style.visibility = 'hidden';
+        }
+        else {
+            textInsaneNode.textContent = 'Insane Asylum';
+        }
+
         linkImage.classList.add('resize');
     }
     else {
         linkImage.src = '../assets/img/green-arrow-right.png';
         link.appendChild(linkImage);
-        textBankNode.textContent = 'The Bank Heist';      
+
+        if(user.completedThemes.includes(currentTheme.id)) {
+            textBankNode.style.visibility = 'hidden';
+        }
+        else {
+            textBankNode.textContent = 'The Bank Heist';
+        }
+
         linkImage.classList.add('resize');     
     }
     themesNode.appendChild(li);
