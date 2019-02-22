@@ -1,3 +1,15 @@
 img {
-    width: 200px;
+    width: 150px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+h1 {
+    font-family: 'Emblema One', cursive;
+    text-shadow: 0 0 30px rgb(2, 255, 2);
 }
