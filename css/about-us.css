@@ -14,7 +14,22 @@ h1 {
     text-shadow: 0 0 30px rgb(2, 255, 2);
 }
 
-main {
-    margin-right: auto;
-    margin-left: auto;
+.rectangle {
+    text-align: justify;
+    width: 60%;
+    margin: 0px 150px 0px 150px;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-top: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
 }
