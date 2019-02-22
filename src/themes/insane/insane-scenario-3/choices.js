@@ -1,8 +1,8 @@
 const fight = { 
     name: 'Fight',
     id: 'fight',
-    description: 'The nurses notice your strange behavior and start walking towards you. Your adrenaline is pumping and you decide you\'ll stand your ground.',
-    result: 'Adrenaline is no match for 6 burly nurses, you\'re taken down and captured.',
+    description: 'The nurses notice your strange behavior and charge towards you. Your adrenaline is pumping, mind is racing, and you decide to stand your ground.',
+    result: 'What were you thinking?! Adrenaline is no match for 6 burly nurses. You\'re taken down and captured.',
     hp: -60,
     cp: -10
 };
@@ -10,7 +10,7 @@ const fight = {
 const run = {
     name: 'Run',
     id: 'run',
-    description: 'You notice an open window at the end of the hall. 6 burly nurses stand between you and it. Make a run for it?',
+    description: 'You notice an open window at the end of the hall. 6 burly nurses stand between you and freedom. Make a run for it?',
     result: 'You zig while they zag. You barely make it through the window. Lucky for you, you were on the second floor. Lose 5 health points from the fall.',
     hp: -5,
     cp: 0
@@ -19,8 +19,8 @@ const run = {
 const distract = {
     name: 'Distract',
     id: 'distract',
-    description: 'You need a distraction to get past all the nurses. RELEASE THE CRAZIES!!',
-    result: 'Plan works perfectly. You manage to escape',
+    description: 'You need a distraction to get past all the nurses. Incite mayhem.',
+    result: 'Run around opening any door you see, releasing the CRAZIES! This plan works perfectly, and you manage to escape!  Gain 10 clever points.',
     hp: 0,
     cp: 10
 };

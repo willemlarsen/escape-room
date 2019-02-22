@@ -81,6 +81,7 @@ formNode.addEventListener('submit', function(event) {
             user.completedThemes.push(currentTheme.id);
            
             resultParagraph.textContent = chosen.result;
+            resultParagraph.classList.add('bold'); 
             
             user.hp += chosen.hp;
             user.cp += chosen.cp;

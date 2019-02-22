@@ -2,9 +2,9 @@ const moat = {
     name: 'Moat',
     id: 'moat',
     description: 'Risk fighting giant rats in the sewer and crawl your way to freedom.',
-    result: 'Now that you are rich, the rats seem to love you... or your money. You befriend them and they help you escape to freedom. You drenched yourself in filth yet again. Lose 10 health points.',
+    result: 'Now that you are rich, the rats seem to love you... or is it your money? You befriend them and they help you escape to freedom. You drench yourself in filth yet again. Lose 10 health points for being hazardous to your health.',
     hp: -10,
-    cp: 5
+    cp: 0
 };
 
 const fightPolice = {

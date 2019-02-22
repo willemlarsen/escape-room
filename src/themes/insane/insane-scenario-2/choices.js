@@ -1,30 +1,30 @@
-const drawer = { 
-    name: 'Drawer',
-    id: 'drawer',
-    description: 'There is a drawer, search through it.',
-    result: 'Find a key and unlock the door with it. You gain nothing.',
-    hp: 0,
+const chair = { 
+    name: 'Chair',
+    id: 'chair',
+    description: 'Pick up the chair and swing it at the door handle.',
+    result: 'After a couple of hard swings, the door handle finally breaks off... but lands on your foot. Ouch. Lose 5 health points.',
+    hp: -5,
     cp: 0
 };
 
 const scream = {
     name: 'Scream',
     id: 'scream',
-    description: 'Scream and attract the nurse\'s attention.', 
-    result: 'Lock the nurse in the room and steal her coat. Gain 5 clever points and lose 5 health points from exerting energy.',
+    description: 'Lure the nurse into room by making a commotion.', 
+    result: 'It worked. You attracted the nurse\'s attention, and they are now in the room with you. Lock them in the room and steal their white coat. Gain 5 clever points but lose 5 health points from the struggle.',
     hp: -5,
     cp: 5
 };
 
-const vents = {
-    name: 'Vents',
-    id: 'vents',
-    description: 'You see a vent.',
-    result: 'You are able to wiggle through, and you are now outside of the room.  While trying to get out, the vent collapsed, and you fall into the hallway.  The fall causes you to lose 10 health points, but you gain 5 clever points for your escape.',
+const vent = {
+    name: 'Vent',
+    id: 'vent',
+    description: 'You locate an air vent and begin stacking furniture to try and reach it.',
+    result: 'Pop open the cover and squeeze through. Crawling on your elbows and knees, you make your way through the dark and dusty vent. Suddenly, the vent collapses, and you fall into the hallway. The fall causes you to lose 10 health points, but you gain 5 clever points for your escape.',
     hp: -10,
     cp: 5
 };
 
-const insaneTwoChoices = [drawer, scream, vents];
+const insaneTwoChoices = [chair, scream, vent];
 
 export default insaneTwoChoices;

@@ -1,0 +1,26 @@
+#header-border {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.points {
+    padding: 0px 10px;
+}
+
+#user-name {
+    padding-right: 10px;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Emblema One', cursive;
+    font-size: 60px;
+    text-shadow: 0 0 30px rgb(2, 255, 2);
+}

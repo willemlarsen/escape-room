@@ -8,16 +8,15 @@ const user = JSON.parse(json);
 scoreDisplay(user);
 
 if(user.hp <= 0) {
-    outcomeMessage.textContent = 'You were caught!!';
+    outcomeMessage.textContent = 'You were caught, whomp whomp!';
 }
 else {
-    outcomeMessage.textContent = 'You escaped!!';
-
+    outcomeMessage.textContent = 'Congratulations, ' + user.name + ', you escaped!';
 }
 
-if(user.cp >= 10) {
-    cpMessage.textContent = 'So clever!';
-}
+// if(user.cp >= 10) {
+//     cpMessage.textContent = 'So clever!';
+// }
 
 buttonNode.addEventListener('click', function() {
     user.hp = 50;

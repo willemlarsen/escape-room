@@ -30,12 +30,14 @@ for(let i = 0; i < allThemes.length; i++) {
         link.appendChild(linkImage);  
         textInsaneNode.textContent = 'Insane Asylum';
         linkImage.classList.add('resize');
+        linkImage.classList.add('insane-position');
     }
     else {
         linkImage.src = '../assets/img/green-arrow.png';
         link.appendChild(linkImage);
         textBankNode.textContent = 'The Bank Heist';      
         linkImage.classList.add('resize');      
+        linkImage.classList.add('bank-position');      
     }
     themesNode.appendChild(li);
     li.appendChild(link);
