@@ -24,8 +24,13 @@ for(let i = 0; i < allThemes.length; i++) {
         li.style.visibility = 'hidden';
     }
 
+    // encodeURIComponent is not necessary here; it is for escaping
+    // all characters except "A-Z a-z 0-9 - _ . ! ~ * ' ( )" so that
+    // link data isn't corrupted going back and forth to the server
+    // (which we'll learn more about in Career Track).
+    // Your quest names are all just hyphens and alphanumerics.
     link.href = 'quest.html?name=' + encodeURIComponent(currentTheme.id) + '&scenario=0';
-
+    
     if(currentTheme.id === 'insane-quest') {
         linkImage.src = '../assets/img/green-arrow-left.png';
         link.appendChild(linkImage);
